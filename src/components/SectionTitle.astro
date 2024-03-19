@@ -1,0 +1,19 @@
+---
+const { title, url } = Astro.props;
+---
+
+<div class="flex items-center gap-2 select-none layout-padding w-full mb-8 mt-24 md:mt-32">
+  <h2 id={title} class="text-nowrap"><span class="text-secondary ">#</span>{title}</h2>
+  <div class="w-full md:w-2/4 h-0.5 bg-secondary"></div>
+  {
+    url && (
+      <a
+        href={url || "#"}
+        target="_blank"
+        class="ml-auto hover:text-secondary cursor-pointer text-nowrap"
+      >
+        View all <span class="hidden md:inline ">~~></span>
+      </a>
+    )
+  }
+</div>

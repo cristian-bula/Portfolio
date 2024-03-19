@@ -1,0 +1,45 @@
+---
+import { Button } from "@nextui-org/react";
+import Image from "astro/components/Image.astro";
+import { PROYECTS } from "../constants/proyects";
+import SectionTitle from "../components/SectionTitle.astro";
+---
+
+<section class="layout-padding w-full">
+  <div
+    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:flex-row gap-8 md:gap-4"
+  >
+    {
+      PROYECTS.map((proyect) => {
+        return (
+          <div class="border border-gray-400 w-full h-auto">
+            <div class="flex overflow-hidden border border-gray-400 h-64">
+              <Image
+                class="object-cover w-full rounded-none hover:scale-110 transition-all"
+                width={369.34}
+                height={256}
+                loading="eager"
+                src={proyect.img as ImageMetadata}
+                alt={proyect.name}
+              />
+            </div>
+              <div class="flex border-b border-gray-400 px-2 py-3">
+                <p class="text-sm text-gray-400">{proyect.technologies}</p>
+              </div>
+              <div class="flex flex-col px-2 pt-3 pb-4 h-44">
+                  <h4 class="text-xl mb-2">{proyect.name}</h4>
+                  <h4 class="text-sm text-gray-400">{proyect.description}</h4>
+                <Button
+                  radius="none"
+                  className="border border-secondary bg-primary text-white !h-8 w-fit self-center mt-auto"
+                  client:visible
+                >
+                  <a href={proyect.url} target="_blank" >Live &lt;~&gt;</a>
+                </Button>
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</section>

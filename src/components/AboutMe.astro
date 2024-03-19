@@ -1,0 +1,24 @@
+---
+import Image from "astro/components/Image.astro";
+import Cristian from "../assets/imgs/cristian2.webp";
+---
+
+<section class="layout-padding w-full flex flex-col md:flex-row items-center">
+  <article class="w-full md:w-3/5">
+    <p>
+      Hello, i'm Cristian! <br /><br /> I'm a self-taught front-end developer based
+      in Panamá, Panamá. I can develop responsive websites from scratch and raise
+      them into modern user-friendly web experiences. <br /><br /> Transforming my
+      creativity and knowledge into a websites has been my passion for over a year.
+    </p>
+  </article>
+  <div class="flex justify-center w-full md:w-2/5 relative">
+    <Image
+      class="w-64 grayscale-[50%] drop-shadow-2xl"
+      src={Cristian}
+      alt="Cristian Bula"
+      loading="eager"
+    />
+    <div class="flex absolute bottom-0 w-56 h-0.5 bg-secondary"></div>
+  </div>
+</section>

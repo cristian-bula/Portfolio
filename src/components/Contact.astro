@@ -1,0 +1,41 @@
+---
+import { GITHUB, EMAIL, LINKEDIN, EMAIL_TEXT } from "../constants/links";
+const linkStyle =
+  "flex items-center group gap-2 hover:text-secondary transition-all";
+const iconStyle = "text-2xl bg-white group-hover:bg-secondary transition-all";
+---
+
+<section class="layout-padding w-full flex flex-col md:flex-row items-center">
+  <article class="w-full md:w-3/5">
+    I'm interested in full time jobs opportunities. However, if you have other
+    request or question, don't hesitate to contact me
+  </article>
+  <div class="flex w-full md:w-2/5 items-center justify-center mt-12 md:mt-0">
+    <div
+      class="flex flex-col w-42 border h-36 p-3 justify-between text-gray-400 text-sm"
+    >
+      <h4 class="text-white text-base">Message me here</h4>
+      <a href={GITHUB} class={linkStyle} target="_blank">
+        <span
+          class={`icon-[mdi--github] ${iconStyle}`}
+          role="img"
+          aria-hidden="true"></span>
+        cristian-bula
+      </a>
+      <a href={EMAIL} class={linkStyle} target="_blank">
+        <span
+          class={`icon-[mdi--email] ${iconStyle}`}
+          role="img"
+          aria-hidden="true"></span>
+        {EMAIL_TEXT}
+      </a>
+      <a href={LINKEDIN} class={linkStyle} target="_blank">
+        <span
+          class={`icon-[mdi--linkedin] ${iconStyle}`}
+          role="img"
+          aria-hidden="true"></span>
+        cristian-bula-dev
+      </a>
+    </div>
+  </div>
+</section>
