@@ -45,16 +45,16 @@ const TypeWriter = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope} className="inline">
+      <motion.div ref={scope} className="inline w-full">
         {wordsArray.map((word, idx) => {
           return (
-            <div key={`word-${idx}`} className="inline-block">
+            <div key={`word-${idx}`} className="inline-block overflow-hidden">
               {word.text.map((char, index) => (
                 <motion.span
                   initial={{}}
                   key={`char-${index}`}
                   className={cn(
-                    "dark:text-white text-black opacity-0 hidden",
+                    "opacity-0 hidden",
                     word.className
                   )}
                 >
@@ -89,7 +89,7 @@ const TypeWriter = ({
           repeatType: "reverse",
         }}
         className={cn(
-          "inline-block rounded-sm w-[4px] h-4 md:h-6 lg:h-8 bg-[#e6e6e6] -mb-1",
+          "inline-block rounded-sm w-[4px] h-6 lg:h-8 bg-[#e6e6e6] mb-2 md:mb-1",
           cursorClassName
         )}
       ></motion.span>

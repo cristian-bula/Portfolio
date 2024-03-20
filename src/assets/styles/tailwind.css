@@ -1,40 +1,3 @@
-:root,
-.light {
-  --nav-height: var(--size-8);
-  --standard-border: var(--border-size-1) solid var(--tertiary-background-color);
-  --font-sans: "Fira Code Variable", sans-serif;
-  --font-mono: "JetBrains Mono", monospace;
-
-  --background-color: #e6e6e6;
-  --secondary-background-color: var(--gray-1);
-  --tertiary-background-color: var(--gray-2);
-  --text-color: #282c33;
-  --accent-color: var(--blue-11);
-  --radio-border-color: var(--gray-4);
-  color-scheme: light;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not(.light):not(.dark) {
-    --background-color: #282c33;
-    --secondary-background-color: var(--gray-9);
-    --tertiary-background-color: var(--gray-8);
-    --text-color: #e6e6e6;
-    --accent-color: var(--blue-2);
-    --radio-border-color: var(--gray-8);
-    color-scheme: dark;
-  }
-}
-
-.dark {
-  --background-color: var(--gray-10);
-  --secondary-background-color: var(--gray-9);
-  --tertiary-background-color: var(--gray-8);
-  --text-color: var(--gray-0);
-  --accent-color: var(--blue-2);
-  --radio-border-color: var(--gray-8);
-  color-scheme: dark;
-}
 
 html {
   scroll-behavior: smooth;
@@ -43,9 +6,9 @@ html {
 body {
   line-height: var(--font-lineheight-3);
   margin: 0;
-  font-family: var(--font-sans);
-  background-color: var(--background-color);
-  color: var(--text-color);
+  font-family: "Fira Code Variable", sans-serif;
+  background-color: #282c33;
+  color: #e6e6e6;
   display: flex;
   flex-direction: column;
   min-block-size: 100vh;
