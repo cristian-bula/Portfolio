@@ -71,7 +71,7 @@ const TypeWriter = ({
   return (
     <div
       className={cn(
-        "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center",
+        "text-base sm:text-xl md:text-3xl lg:text-5xl font-bold text-center w-[282.52px] h-[40px] md:w-[320.94px] md:h-[48px]",
         className
       )}
     >
