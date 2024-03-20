@@ -31,7 +31,7 @@ const Skills = () => {
           />
         </div>
         <div className="w-full md:w-2/4">
-          <div className="grid auto-rows-[172px] grid-cols-3 gap-4">
+          <div className="grid auto-rows-[112px] md:auto-rows-[172px] grid-cols-3 gap-2 md:gap-4">
             {SKILLS.map((skill, i) => (
               <button
                 key={skill.id}
@@ -47,12 +47,12 @@ const Skills = () => {
                 }}
               >
                 <span
-                  className={`${skill.icon} text-7xl group-hover:bg-secondary ${
+                  className={`${skill.icon} text-5xl md:text-7xl group-hover:bg-secondary ${
                     skill.id === selectedSkill.id ? "bg-secondary" : ""
                   }`}
                 />
                 <p
-                  className={`group-hover:text-secondary text-sm md:text-base ${
+                  className={`group-hover:text-secondary text-xs md:text-base ${
                     skill.id === selectedSkill.id ? "text-secondary" : ""
                   }`}
                 >
