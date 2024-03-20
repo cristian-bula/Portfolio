@@ -5,9 +5,5 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [
-    tailwind(),
-    react(),
-    (await import("astro-compress")).default(),
-  ],
+  integrations: [tailwind(), react()],
 });

@@ -27,7 +27,6 @@
   },
   "devDependencies": {
     "@iconify/json": "^2.2.192",
-    "@iconify/tailwind": "^0.1.4",
-    "astro-compress": "2.2.15"
+    "@iconify/tailwind": "^0.1.4"
   }
 }

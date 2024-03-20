@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { CircularProgress } from "@nextui-org/react";
 import { SKILLS } from "../constants/skills.ts";
 
