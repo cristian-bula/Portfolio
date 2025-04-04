@@ -1,5 +1,7 @@
 ---
-import { EMAIL_TEXT, GITHUB, LINKEDIN } from "../constants/links.ts";
+import { EMAIL_TEXT, GITHUB, LINKEDIN } from "../constants/links";
+const date = new Date();
+const year = date.getFullYear();
 ---
 
 <footer class="border-t-1 mt-40 w-full">
@@ -35,6 +37,7 @@ import { EMAIL_TEXT, GITHUB, LINKEDIN } from "../constants/links.ts";
     </div>
   </section>
   <p class="flex justify-center text-gray-400 mb-12">
-    Copyright 2024. Made by Cristian
+    Copyright {year}. Made by Cristian
   </p>
 </footer>
+
